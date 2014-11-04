@@ -12,4 +12,13 @@ public class PadTest extends TestCase {
         assertEquals(pad.getX(), 3);
         assertEquals(pad.getY(), 4);
     }
+
+    public void testPadGetNet() {
+        Pad pad = new Pad();
+        Net net = new Net();
+        net.addPad(pad);
+        assertEquals(pad.getNet(), net);
+    }
+
+
 }
